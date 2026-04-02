@@ -1,5 +1,5 @@
 from PIL import Image, ImageEnhance, ImageFilter
-from validate import validate_image_and_image_path
+from imagera.validate import validate_image_and_image_path
 
 def enhance_contrast(value: float, image: str | Image.Image) -> Image.Image:
     

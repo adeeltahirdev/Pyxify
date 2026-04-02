@@ -1,5 +1,5 @@
 from PIL import Image, ImageOps
-from validate import validate_image_and_image_path
+from imagera.validate import validate_image_and_image_path
 
 def grayscale(image: str | Image.Image) -> Image.Image:
     

@@ -1,5 +1,5 @@
 from PIL import Image
-from validate import validate_image_and_image_path
+from imagera.validate import validate_image_and_image_path
 
 
 def crop(left: float, top: float, right: float, bottom: float, image: str | Image.Image) -> Image.Image:

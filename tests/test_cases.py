@@ -1,7 +1,7 @@
 import pytest
 
 # Test case for validations
-from validate import validate_image_and_image_path, validate_image_path, validate_file_is_image
+from imagera.validate import validate_image_and_image_path, validate_image_path, validate_file_is_image
 
 def test_validate_image_path():
     
@@ -40,7 +40,7 @@ def test_validate_image_and_image_path():
     
 
 # Test cases for convert
-from convert import grayscale
+from imagera.convert import grayscale
 
 def test_grayscale():
     
@@ -60,7 +60,7 @@ def test_grayscale():
     
     
 # Test cases for meatadata
-from metadata import get_image_metadata
+from imagera.metadata import get_image_metadata
 
 def test_get_image_metadata():
     
@@ -81,7 +81,7 @@ def test_get_image_metadata():
     
 
 # Test cases for flip
-from flip import flip_horizontal, flip_vertical, rotate
+from imagera.flip import flip_horizontal, flip_vertical, rotate
 
 
 def test_flip_horizontal():
@@ -138,7 +138,7 @@ def test_rotate():
     
     
 # Test cases for crop
-from crop import crop, resize
+from imagera.crop import crop, resize
 
 
 def test_crop():
@@ -175,7 +175,7 @@ def test_resize():
         resize(200, 200, img3)
     
 # Test cases fro enhance
-from enhance import enhance_brightness, enhance_contrast, enhance_color, enhance_sharpness, blur_effect
+from imagera.enhance import enhance_brightness, enhance_contrast, enhance_color, enhance_sharpness, blur_effect
 
 
 def test_enhance_brightness():
