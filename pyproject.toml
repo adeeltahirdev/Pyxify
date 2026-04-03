@@ -5,15 +5,20 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pyxify"
 version = "0.1.0"
-description = "Imagera is a simple and lightweight Python library for basic image processing tasks."
+description = "A simple and lightweight Python library for basic image processing tasks."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "pillow>=12.2.0",
 ]
 
-[dependency-groups]
+[project.optional-dependencies]
 dev = [
     "pytest>=9.0.2",
     "pytest-cov>=7.1.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/adeeltahirdev/Pyxify"
+Repository = "https://github.com/adeeltahirdev/Pyxify"
+Issues = "https://github.com/adeeltahirdev/Pyxify/issues"
