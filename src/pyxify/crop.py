@@ -1,5 +1,5 @@
 from PIL import Image
-from src.pyxify.validate import validate_image_and_image_path
+from .validate import validate_image_and_image_path
 
 
 def crop(left: float, top: float, right: float, bottom: float, image: str | Image.Image) -> Image.Image:
